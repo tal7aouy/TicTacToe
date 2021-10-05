@@ -97,3 +97,12 @@ h1 {
 .board-tile:hover {
   background-color: #eeeeee;
 }
+.tile-x {
+  color: #42bed7;
+}
+.tile-o {
+  color: #d7bafb;
+}
+.winner-tile span {
+  color: #ff7f50;
+}
