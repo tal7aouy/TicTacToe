@@ -1,9 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500&display=swap');
 /* X and O players */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
+
 :root {
   --mainColor: #36739e;
 }
+
+.all:root {
+  --mainColor: #36739e;
+  --color-bg: #fff;
+}
+
+.dark:root {
+  --mainColor: #e5e5e5;
+  --color-bg: #121212;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -12,7 +24,49 @@
 body {
   font-family: 'Merriweather Sans', sans-serif;
   color: var(--mainColor);
+  background-color: var(--color-bg);
 }
+/* Dark mode style */
+
+.theme {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+
+.theme input {
+  width: 80px;
+  height: 30px;
+  background: #121212;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.theme input:checked {
+  background: #fff;
+}
+
+.theme input::after {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #36739e;
+  transform: translate(5px, 5px);
+  transition: 0.3s linear;
+}
+
+.theme input:checked::after {
+  inset: unset;
+  background: transparent;
+  box-shadow: 10px 10px 0 #353b48;
+  transform: translate(calc(90px - 45px), -5px);
+}
+/* Game  style*/
 .title {
   max-width: 500px;
 }
