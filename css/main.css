@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500&display=swap');
+/* X and O players */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
 :root {
   --mainColor: #36739e;
 }
@@ -17,15 +19,16 @@ body {
 .container {
   max-width: 1440px;
   height: 800px;
-  max-height: 100vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
+  padding: 40px;
 }
 h1 {
-  font-size: 70px;
+  font-size: 50px;
   font-weight: bold;
+  margin: 1rem auto;
 }
 .restart {
   width: 175px;
@@ -89,6 +92,8 @@ h1 {
   transition: all 0.2s ease;
   cursor: pointer;
   outline: none;
+  font-family: 'Pacifico', cursive;
+  transition: all 0.5s ease-in-out;
 }
 .board-tile:not(:nth-child(3n)) {
   border-right: 3px solid rgba(137, 163, 189, 0.58);
@@ -99,6 +104,7 @@ h1 {
 .board-tile:hover {
   background-color: #eeeeee;
 }
+
 .tile-x {
   color: #42bed7;
 }
@@ -107,4 +113,14 @@ h1 {
 }
 .winner-tile span {
   color: #ff7f50;
+}
+
+/* responsive game */
+@media only screen and (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+  }
+  .left {
+    margin-bottom: 40px;
+  }
 }
