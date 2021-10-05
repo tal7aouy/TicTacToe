@@ -27,3 +27,16 @@ function restartGame() {
 
 // initial game
 gameView.updateBoard(game)
+
+// toggle theme
+const btnDarkMode = document.querySelector('#toggle')
+const body = document.querySelector('html')
+btnDarkMode.addEventListener('click', (e) => {
+  if (btnDarkMode.checked) {
+    body.classList.remove('all')
+    body.classList.add('dark')
+  } else {
+    body.classList.add('all')
+    body.classList.remove('dark')
+  }
+})
