@@ -22,7 +22,7 @@ export default class GameView {
     let playerX = document.querySelector('.player-x')
     let playerO = document.querySelector('.player-o')
     playerX.classList.remove('active')
-    playerX.classList.remove('acive')
+    playerO.classList.remove('active')
     if (game.turn === 'X') {
       playerX.classList.add('active')
     } else {
