@@ -57,10 +57,18 @@ h1 {
   border-bottom: 5px solid #eee;
   padding-bottom: 9px;
 }
+.player-x.active {
+  color: #42bed7;
+  border-color: #42bed7;
+}
 .header .player-o {
   flex: 1;
   border-bottom: 5px solid #eee;
   padding-bottom: 9px;
+}
+.player-o.active {
+  color: #d7bafb;
+  border-color: #d7bafb;
 }
 .board {
   display: grid;
