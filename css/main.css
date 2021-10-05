@@ -11,7 +11,9 @@ body {
   font-family: 'Merriweather Sans', sans-serif;
   color: var(--mainColor);
 }
-
+.title {
+  max-width: 500px;
+}
 .container {
   max-width: 1440px;
   height: 800px;
