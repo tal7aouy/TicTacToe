@@ -56,6 +56,7 @@ h1 {
   display: flex;
   color: #9a9a9a;
   font-size: 24px;
+  font-family: 'Pacifico', cursive;
 }
 .header .player-x {
   flex: 1;
