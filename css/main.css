@@ -165,6 +165,9 @@ h1 {
 .tile-o {
   color: #d7bafb;
 }
+.winner-tile {
+  background-color: #75d475;
+}
 .winner-tile span {
   color: #ff7f50;
 }
